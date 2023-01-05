@@ -1,0 +1,11 @@
+.main{
+    @include contenedor;
+
+    margin-top: var(--height-header);
+    flex-direction: column;
+    background-color: lightblue;
+    /*background-image: url("./src/img/fondo-principal.jpg");*/
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}

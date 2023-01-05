@@ -1,0 +1,7 @@
+.main{
+    @include contenedor;
+
+    margin-top: var(--height-header);
+    flex-direction: column;
+    background-color: lightblue;
+}
