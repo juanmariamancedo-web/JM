@@ -2,3 +2,7 @@ main.css
 prepros.config
 README.md
 src/img/fondo-principal.jpg
+node_modules/
+package-lock.json
+package.json
+src/js/main-dist.js

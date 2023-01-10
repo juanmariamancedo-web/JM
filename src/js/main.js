@@ -1,6 +1,8 @@
-const consulta = window.matchMedia("(max-width: 600px)")
+import { Header } from "./components/_Header.jsx";
 
-const lista = document.getElementById("lista");
+ReactDOM.createRoot(document.getElementById("root")).render(<Header/>)
+
+/*const lista = document.getElementById("lista");
 
 const hammertime = new Hammer(document.body);
 
@@ -9,7 +11,7 @@ var anteriorMatches;
 
 const activarEscuchadorDeCambiosDeResolucion = ()=>{
     hammertime.on('swipeleft', function(ev) {
-        lista.classList.remove("header__lista--activo")
+        lista.classNameNameList.remove("header__lista--activo")
 
         if(menuAbierdo){
             botonDeHamburguesa.textContent = "X"
@@ -18,7 +20,7 @@ const activarEscuchadorDeCambiosDeResolucion = ()=>{
     });
     
     hammertime.on('swiperight', function(ev) {
-        lista.classList.add("header__lista--activo")
+        lista.classNameList.add("header__lista--activo")
         
         if(!menuAbierdo){
             botonDeHamburguesa.textContent = "A"
@@ -44,7 +46,7 @@ consulta.onchange = ()=>{
         hammertime.off("swipeleft");
         hammertime.off("swiperight");
         menuAbierdo = false
-        lista.classList.remove("header__lista--activo")
+        lista.classNameList.remove("header__lista--activo")
         anteriorMatches = false;      
 
     } 
@@ -52,7 +54,7 @@ consulta.onchange = ()=>{
 
 const botonDeHamburguesa = document.getElementById("botonDeHamburguesa")
 botonDeHamburguesa.addEventListener("click", ()=>{
-    lista.classList.toggle("header__lista--activo")
+    lista.classNameList.toggle("header__lista--activo")
     if(menuAbierdo){
         botonDeHamburguesa.textContent = "X"
     }else{
@@ -60,3 +62,11 @@ botonDeHamburguesa.addEventListener("click", ()=>{
     }
     menuAbierdo = !menuAbierdo
 })
+
+function Header (){
+    return(
+        <p>dfdsf</p>
+    )
+}
+
+*/
