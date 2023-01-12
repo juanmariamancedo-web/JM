@@ -25,6 +25,12 @@
             border-radius: 30px;
         }
     }
+
+    &__contenido--onecolumn{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(237px, auto)); 
+    }
+    
     &__titulo{
         grid-area: titulo;
     }

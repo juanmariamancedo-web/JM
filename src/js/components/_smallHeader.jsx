@@ -28,7 +28,7 @@ export class SmallHeader extends React.Component{
                 <header className="header">
                     <div className="header__contenido">
                         <div className="header__hamburguesa-div">
-                            <span className="header__hamburguesa" onClick={this.handleChange}>H</span>
+                            <span className="header__hamburguesa icon" onClick={this.handleChange}>g</span>
                         </div>
                         <div className="header__logo-div">
                             <span className="header__logo">JModels</span>
@@ -52,12 +52,24 @@ class SideNav extends React.Component{
                 <nav className="nav nav--activo">
                 <div className="nav__contenido">
                     <header className="nav__header">
-                        <span className="nav__hamburguesa" onClick={this.props.handleChange}>X</span>
+                        <span className="nav__hamburguesa icon" onClick={this.props.handleChange}>h</span>
                     </header>
                     <ul className="nav__lista">
-                        <li>Inicio</li>
-                        <li>¿Qué nos diferencia?</li>
-                        <li>¿Por qué elegirnos?</li>
+                        <li>
+                            <a href="./index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./qué-nos-diferencia.html">
+                                ¿Qué nos diferencia?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./por-qué-elegirnos.html">
+                                ¿Por qué elegirnos?
+                            </a>
+                        </li>
                     </ul>
                 </div>     
                 </nav>
@@ -68,12 +80,24 @@ class SideNav extends React.Component{
             <nav className="nav">
             <div className="nav__contenido">
                 <header className="nav__header">
-                    <span className="nav__hamburguesa" onClick={this.handleChange}>X</span>
+                    <span className="nav__hamburguesa icon" onClick={this.handleChange}>h</span>
                 </header>
                 <ul className="nav__lista">
-                    <li>Inicio</li>
-                    <li>¿Qué nos diferencia?</li>
-                    <li>¿Por qué elegirnos?</li>
+                    <li>
+                        <a href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./qué-nos-diferencia.html">
+                            ¿Qué nos diferencia?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./por-qué-elegirnos.html">
+                            ¿Por qué elegirnos?
+                        </a>
+                    </li>
                 </ul>
             </div>     
             </nav>

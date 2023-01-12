@@ -4,11 +4,87 @@
     padding: $space-relation 0;
 
     &__contenido{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "contacto  redes   form"
+                             "contacto  redes   form"
+                             "autor     autor   autor";
+
+        gap: $space-relation;
+        
+        @media screen and (max-width: 600px){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "contacto"
+                                 "redes"
+                                 "form"
+                                 "autor";            
+        }
+    }
+
+    &__contacto{
+        display: grid;
+        grid-area: contacto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: subgrid;
+        
+        justify-items: center;
+        align-items: center;
+
+        gap: $space-relation;
+
+        & div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__redes{
+        display: grid;
+        grid-area: redes;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: subgrid;
+        
+        justify-items: center;
+        align-items: center;
+
+        gap: $space-relation;
+
+        & ul{
+            display: flex;
+            justify-content: space-evenly;
+
+            list-style-type: none;
+            padding: 0;
+
+            justify-self: normal;
+        }
+    }
+
+    &__form{
+        display: grid;
+        grid-area: form;
+        grid-template-rows: 1fr 1fr;
+        grid-template-rows: subgrid;
+
+        justify-items: center;
+        align-items: center;
+
+        gap: $space-relation;
+    }
+
+    &__autor{
+        grid-area: autor;
+
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        row-gap: $space-relation;
+        justify-content: center;
+
+        gap: $space-relation;
     }
 
     &__logo{

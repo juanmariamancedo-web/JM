@@ -4,9 +4,21 @@ export function LargeHeader(){
             <nav className="header__contenido">
                 <span className="header__logo">JModels</span>
                 <ul className="header__lista" id="lista">
-                    <li>Inicio</li>
-                    <li>¿Qué nos diferencia?</li>
-                    <li>¿Por qué elegirnos?</li>
+                    <li>
+                        <a href="./index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./qué-nos-diferencia.html">
+                            ¿Qué nos diferencia?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./por-qué-elegirnos.html">
+                            ¿Por qué elegirnos?
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
