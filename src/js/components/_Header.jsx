@@ -4,7 +4,7 @@ import { SmallHeader } from "./_smallHeader.jsx"
 export class Header extends React.Component{
     constructor(props){
         super(props)
-        this.consulta = window.matchMedia("(max-width: 600px)")
+        this.consulta = window.matchMedia("(max-width: 1024px)")
         this.state ={
             small: this.consulta.matches
         }

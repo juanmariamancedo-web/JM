@@ -7,7 +7,9 @@ $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
 
-
+    /* colors */
+$regular-color: black;
+$call-to-action-color: yellow;
 
    /*fonts weight*/
 $font-weight-regular: 400;
@@ -20,8 +22,6 @@ $font-weight-black: 900;
 $font-size-title: 32px;
 $size-size-normal: 14pt;
 
-    /* color */
-    $regular-color: black;
 
     /*space*/
 $space-relation: 1rem;
@@ -72,6 +72,23 @@ $font-family-normal: 'Rubik', sans-serif;
         position: relative;
         flex: 0 0 var(--width-conteiner);
     }
+
+    &--small{
+        min-height: auto;
+    }
+}
+
+.title-que-nos-diferencia{
+    text-align: center;
+    padding-top: $space-noRelation;
+    font-size: $font-size-title;
+}
+
+.call-to-action{
+    display: block;
+    padding: .5em .5em;
+    background-color: $call-to-action-color;
+    border-radius: 30px;
 }
 
 @import "icons";

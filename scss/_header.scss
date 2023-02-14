@@ -22,6 +22,27 @@
     }
 }
 
+.pre-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: var(--height-header);
+
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    background-color: aquamarine;
+    
+    z-index: $z-fixed;
+    
+    &__logo{
+        font-family: $font-family-title;
+        font-size: $font-size-title;
+    }
+}
 .header{
     @include contenedor;
 

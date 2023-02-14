@@ -31,7 +31,7 @@ export class SmallHeader extends React.Component{
                             <span className="header__hamburguesa icon" onClick={this.handleChange}>g</span>
                         </div>
                         <div className="header__logo-div">
-                            <span className="header__logo">JModels</span>
+                            <h1 className="header__logo">JModels</h1>
                         </div>
                     </div>
                 </header>
@@ -70,6 +70,11 @@ class SideNav extends React.Component{
                                 ¿Por qué elegirnos?
                             </a>
                         </li>
+                        <li>
+                            <a href="https://juanman.wufoo.com/forms/z1j83afr1kl0fb0/" target="_blank" className="call-to-action">
+                                ¡Trabaja con nosotros!
+                            </a>
+                        </li>
                     </ul>
                 </div>     
                 </nav>
@@ -96,6 +101,11 @@ class SideNav extends React.Component{
                     <li>
                         <a href="./por-qué-elegirnos.html">
                             ¿Por qué elegirnos?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://juanman.wufoo.com/forms/z1j83afr1kl0fb0/" target="_blank" className="call-to-action">
+                            ¡Trabaja con nosotros!
                         </a>
                     </li>
                 </ul>

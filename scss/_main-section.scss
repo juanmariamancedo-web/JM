@@ -3,9 +3,11 @@
 
     margin-top: var(--height-header);
     flex-direction: column;
-    background-color: lightblue;
-    /*background-image: url("./src/img/fondo-principal.jpg");*/
+    
     background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
+    background-image: url("./src/img/cover.jpeg");
+    background-color: rgb(141, 141, 141);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
