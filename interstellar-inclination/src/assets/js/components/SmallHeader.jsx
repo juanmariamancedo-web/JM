@@ -1,3 +1,4 @@
+import React from "react"
 export class SmallHeader extends React.Component{
     constructor(props){
         super(props)
@@ -25,13 +26,13 @@ export class SmallHeader extends React.Component{
     render(){
         return(
             <div>
-                <header className="header">
-                    <div className="header__contenido">
-                        <div className="header__hamburguesa-div">
-                            <span className="header__hamburguesa icon" onClick={this.handleChange}>g</span>
+                <header className="fixed w-full flex bg-cyan-400 dark:bg-slate-800 dark:text-white h-14 justify-center items-center">
+                    <div className="w-full h-full">
+                        <div className="flex ml-3 absolute h-full items-center z-10">
+                            <span className="icon-bars align-middle" onClick={this.handleChange}>g</span>
                         </div>
-                        <div className="header__logo-div">
-                            <h1 className="header__logo">JModels</h1>
+                        <div className="flex absolute w-full h-full justify-center items-center">
+                        <a href="/"><span className="font-mono text-3xl">Markdown</span></a>
                         </div>
                     </div>
                 </header>
@@ -41,77 +42,33 @@ export class SmallHeader extends React.Component{
     }
 }
 
-class SideNav extends React.Component{
-    constructor(props){
-        super(props)
-    }
-
-    render(){
-        if(this.props.menuOpen){
-            return(
-                <nav className="nav nav--activo">
-                <div className="nav__contenido">
-                    <header className="nav__header">
-                        <span className="nav__hamburguesa icon" onClick={this.props.handleChange}>h</span>
-                    </header>
-                    <ul className="nav__lista">
-                        <li>
-                            <a href="./index.html">
-                                Inicio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./qué-nos-diferencia.html">
-                                ¿Qué nos diferencia?
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./por-qué-elegirnos.html">
-                                ¿Por qué elegirnos?
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://juanman.wufoo.com/forms/z1j83afr1kl0fb0/" target="_blank" className="call-to-action">
-                                ¡Trabaja con nosotros!
-                            </a>
-                        </li>
-                    </ul>
-                </div>     
-                </nav>
-            )
-        }
-
-        return(
-            <nav className="nav">
-            <div className="nav__contenido">
-                <header className="nav__header">
-                    <span className="nav__hamburguesa icon" onClick={this.handleChange}>h</span>
-                </header>
-                <ul className="nav__lista">
-                    <li>
-                        <a href="./index.html">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./qué-nos-diferencia.html">
-                            ¿Qué nos diferencia?
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./por-qué-elegirnos.html">
-                            ¿Por qué elegirnos?
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://juanman.wufoo.com/forms/z1j83afr1kl0fb0/" target="_blank" className="call-to-action">
-                            ¡Trabaja con nosotros!
-                        </a>
-                    </li>
-                </ul>
-            </div>     
-            </nav>
-        )
-        
-    }
-}
+export function SideNav(props){
+    let classNameNav = props.menuOpen? "": "-translate-x-full "
+     return(
+         <nav className={classNameNav + "transition-transform duration-1000 h-screen fixed flex bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-900 dark:to-blue-900 dark:text-white z-10 inset-0"}>
+            <div className="relative h-14 z-10 flex items-center">
+                    <span className="ml-3 icon-times align-middle" onClick={props.handleChange}>x</span>
+            </div>          
+            <ul className="absolute inset-0 flex flex-col justify-center items-center gap-3">
+                 <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/qué-nos-diferencia">
+                        ¿Qué nos diferencia?
+                    </a>
+                </li>
+                <li>
+                    <a href="/por-qué-elegirnos">
+                        ¿Por qué elegirnos?
+                    </a>
+                </li>
+                <li>
+                    <a href="https://juanman.wufoo.com/forms/z1j83afr1kl0fb0/" target="_blank" className="call-to-action">
+                        ¡Trabaja con nosotros!
+                    </a>
+                </li>
+            </ul>    
+        </nav>
+     )
+ }

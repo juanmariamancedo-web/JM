@@ -1,5 +1,6 @@
 import { LargeHeader } from "./LargeHeader.jsx"
 import { SmallHeader } from "./SmallHeader.jsx"
+import React from "react"
 
 export class Header extends React.Component{
     constructor(props){

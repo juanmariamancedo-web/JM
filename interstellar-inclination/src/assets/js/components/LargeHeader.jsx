@@ -1,21 +1,19 @@
 export function LargeHeader(){
     return(
-        <header className="header">
-            <nav className="header__contenido">
-                <h1 className="header__logo">JModels</h1>
-                <ul className="header__lista" id="lista">
+        <header className="fixed w-full flex bg-cyan-400  dark:bg-slate-800 dark:text-white h-14 items-center">
+            <nav className="container flex justify-between items-baseline px-3">
+                <a href="/"><span className="font-mono text-3xl">Markdown</span></a>
+                <ul className="flex gap-x-3 align-baseline" id="lista">
                     <li>
-                        <a href="./index.html">
-                            Inicio
-                        </a>
+                        <a href="/">Inicio</a>
                     </li>
                     <li>
-                        <a href="./qué-nos-diferencia.html">
+                        <a href="/qué-nos-diferencia">
                             ¿Qué nos diferencia?
                         </a>
                     </li>
                     <li>
-                        <a href="./por-qué-elegirnos.html">
+                        <a href="/por-qué-elegirnos">
                             ¿Por qué elegirnos?
                         </a>
                     </li>
@@ -29,3 +27,22 @@ export function LargeHeader(){
         </header>
     )
 }
+
+/*export function LargeHeader(){
+    return(
+        <header className="fixed w-full flex bg-cyan-400  dark:bg-slate-800 dark:text-white h-14 items-center">
+            <nav className="container flex justify-between items-baseline px-3">
+                <a href="/"><span className="font-mono text-3xl">Markdown</span></a>
+                <ul className="flex gap-x-3 align-baseline" id="lista">
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li><a href="/about">Acerca de</a></li>
+                    <li>
+                        <ButtonDarkMode />
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    )
+} */
