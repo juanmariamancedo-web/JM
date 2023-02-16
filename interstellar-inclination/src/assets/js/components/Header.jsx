@@ -1,6 +1,7 @@
 import { LargeHeader } from "./LargeHeader.jsx"
 import { SmallHeader } from "./SmallHeader.jsx"
 import React from "react"
+import { Suspense } from "react"
 
 export class Header extends React.Component{
     constructor(props){
@@ -19,19 +20,24 @@ export class Header extends React.Component{
     }
 
     render(){
-        if(this.state.small){
-            return(
-                <SmallHeader/>
-            )
-        }else{
-            return(
-                <LargeHeader/>
-            )
-        }
+        return(
+            <>
+                <Suspense fallback={<Loading />}>
+                    {this.state.small
+                    ?    <SmallHeader/>
+                    :    <LargeHeader/>
+                    }
+                </Suspense>
+            </>
+        )
     }
 }
 
-
+function Loading(){
+    return(
+        <span>Loading...</span>
+    )
+}
 
 /*
 <header className="header">
