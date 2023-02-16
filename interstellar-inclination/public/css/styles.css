@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "agencia";
-  src:url("fonts/agencia.eot");
-  src:url("fonts/agencia.eot?#iefix") format("embedded-opentype"),
-    url("fonts/agencia.woff") format("woff"),
-    url("fonts/agencia.ttf") format("truetype"),
-    url("fonts/agencia.svg#agencia") format("svg");
+  src:url("../fonts/agencia.eot");
+  src:url("../fonts/agencia.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/agencia.woff") format("woff"),
+    url("../fonts/agencia.ttf") format("truetype"),
+    url("../fonts/agencia.svg#agencia") format("svg");
   font-weight: normal;
   font-style: normal;
 
