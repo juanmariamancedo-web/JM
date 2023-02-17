@@ -2,7 +2,7 @@ export function LargeHeader(){
     return(
         <header className="fixed w-full flex bg-cyan-400 h-14 justify-center items-center">
             <nav className="container flex justify-between items-baseline px-3">
-                <a href="/"><span className="font-mono text-3xl">Markdown</span></a>
+                <a href="/"><span className="font-pacifico text-3xl">JModels</span></a>
                 <ul className="flex gap-x-3 align-baseline text-lg" id="lista">
                     <li>
                         <a href="/">Inicio</a>

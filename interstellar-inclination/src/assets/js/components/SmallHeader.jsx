@@ -32,7 +32,7 @@ export class SmallHeader extends React.Component{
                             <span className="icon-bars align-middle" onClick={this.handleChange}></span>
                         </div>
                         <div className="flex absolute w-full h-full justify-center items-center">
-                        <a href="/"><span className="font-mono text-3xl">Markdown</span></a>
+                        <a href="/"><span className="font-pacifico text-3xl">JModels</span></a>
                         </div>
                     </div>
                 </header>
