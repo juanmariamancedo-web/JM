@@ -78,3 +78,11 @@
 .font-pacifico{
   font-family: 'pacifico', cursive;
 }
+
+.main-background{
+  background-image: url("/img/main.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #5ce1e6;
+}

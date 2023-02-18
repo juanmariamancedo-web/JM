@@ -26,7 +26,7 @@ export class SmallHeader extends React.Component{
     render(){
         return(
             <div>
-                <header className="fixed w-full flex bg-cyan-400 dark:bg-slate-800 dark:text-white h-14 justify-center items-center">
+                <header className="z-10 fixed w-full flex bg-cyan-400 dark:bg-slate-800 dark:text-white h-14 justify-center items-center">
                     <div className="w-full h-full">
                         <div className="flex ml-3 absolute h-full items-center z-10">
                             <span className="icon-bars align-middle" onClick={this.handleChange}></span>
